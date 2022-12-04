@@ -6,8 +6,8 @@ end_time = 60 * 60 * 24 * 100
 sup_range = (60, 140)
 dem_range = (60, 140)
 
-supply_schedule = [{'from': start_time, 'to': end_time, 'ranges': [sup_range], 'stepmode': 'random'}]
-demand_schedule = [{'from': start_time, 'to': end_time, 'ranges': [dem_range], 'stepmode': 'random'}]
+supply_schedule = [{'from': start_time, 'to': end_time, 'ranges': [sup_range], 'stepmode': 'jittered'}]
+demand_schedule = [{'from': start_time, 'to': end_time, 'ranges': [dem_range], 'stepmode': 'jittered'}]
 
 order_interval = 60
 order_sched = {'sup': supply_schedule, 'dem': demand_schedule,
