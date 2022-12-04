@@ -2,8 +2,6 @@ from BSE import market_session
 
 start_time = 0
 end_time = 60 * 60 * 24 * 100
-num_sellers = 15
-num_buyers = 15
 
 sup_range = (60, 140)
 dem_range = (60, 140)
